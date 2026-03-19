@@ -352,6 +352,8 @@
         }
 
         @media (max-width: 600px) {
+            /* Board: 7 x 32px cells + 6 x 5px gaps + 2 x 10px padding = 274px */
+
             .container {
                 padding-left: 20px;
                 padding-right: 20px;
@@ -368,68 +370,79 @@
                 margin-bottom: 0.8rem;
             }
 
+            /* Top 2 buttons - match board width exactly */
             .mode-selector {
                 margin-bottom: 1rem;
-                max-width: 326px;
+                max-width: 274px;
+                padding: 0;
+                gap: 0.5rem;
             }
 
             .mode-btn {
-                padding: 0.6rem 1.5rem;
-                font-size: 0.8rem;
+                padding: 0.55rem 0;
+                font-size: 0.72rem;
                 flex: 1;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
+            /* Smaller board */
             .game-board {
-                padding: 12px;
-                margin-bottom: 1rem;
+                padding: 10px;
+                margin-bottom: 2rem;
             }
 
             .board-grid {
-                grid-template-columns: repeat(7, 38px);
-                grid-template-rows: repeat(6, 38px);
-                gap: 6px;
+                grid-template-columns: repeat(7, 32px);
+                grid-template-rows: repeat(6, 32px);
+                gap: 5px;
             }
 
             .cell {
-                width: 38px;
-                height: 38px;
+                width: 32px;
+                height: 32px;
             }
 
             .disc {
-                width: 34px;
-                height: 34px;
+                width: 28px;
+                height: 28px;
             }
 
-            button {
-                padding: 0.6rem 0.8rem;
-                font-size: 0.75rem;
-                white-space: nowrap;
-                flex: 1;
-                max-width: 140px;
-            }
-
+            /* Bottom 2 buttons - match board width exactly */
             .controls {
                 flex-wrap: nowrap;
                 gap: 0.5rem;
                 margin-bottom: 1rem;
+                max-width: 274px;
             }
 
+            button {
+                padding: 0.55rem 0;
+                font-size: 0.72rem;
+                white-space: nowrap;
+                flex: 1;
+                max-width: none;
+            }
+
+            /* Stats 3 boxes - match board width exactly */
             .stats {
                 gap: 0.5rem;
                 margin-top: 1rem;
+                max-width: 274px;
             }
 
             .stat {
-                padding: 0.5rem 1rem;
-                min-width: 80px;
+                padding: 0.5rem 0;
+                min-width: 0;
             }
 
             .stat-label {
-                font-size: 0.7rem;
+                font-size: 0.65rem;
             }
 
             .stat-value {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
             }
         }
     </style>
