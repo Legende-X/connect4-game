@@ -406,18 +406,23 @@
             /* Top 2 buttons - match board width exactly */
             .mode-selector {
                 margin-bottom: 1.1rem;
+                width: 295px;
                 max-width: 295px;
                 padding: 0;
                 gap: 0.5rem;
+                display: flex;
             }
 
             .mode-btn {
                 padding: 0.6rem 0;
-                font-size: 0.78rem;
+                font-size: 0.72rem;
                 flex: 1;
+                width: 0;
+                min-width: 0;
                 white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                overflow: visible;
+                text-overflow: clip;
+                text-align: center;
             }
 
             /* Board */
@@ -425,6 +430,9 @@
                 padding: 10px;
                 margin-top: 1.5rem;
                 margin-bottom: 2.5rem;
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .board-grid {
