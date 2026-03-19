@@ -1,6 +1,6 @@
-const CACHE_NAME = 'legendex-connect4-v1';
+const CACHE_NAME = 'legendex-connect4-v2';
 const urlsToCache = [
-  './connect4.html',
+  './index.html',
   './manifest-connect4.json'
 ];
 

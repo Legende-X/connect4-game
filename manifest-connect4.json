@@ -2,7 +2,7 @@
   "name": "LegendeX Connect4",
   "short_name": "Connect4",
   "description": "Play Connect4 - 2 Players or vs Computer",
-  "start_url": "./connect4.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#2b2b2b",
   "theme_color": "#2b2b2b",
