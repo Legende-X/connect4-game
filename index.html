@@ -144,6 +144,8 @@
             transition: all 0.3s ease;
             flex: 0 0 auto;
             width: auto;
+            position: relative;
+            overflow: hidden;
         }
 
         .mode-btn.active {
@@ -382,7 +384,14 @@
                 align-items: flex-start;
                 justify-content: center;
                 overflow-x: hidden;
+                overflow-y: auto;
                 width: 100%;
+                min-height: unset;
+                height: auto;
+            }
+
+            body::before {
+                display: none;
             }
 
             h1 {
@@ -420,9 +429,14 @@
                 width: 0;
                 min-width: 0;
                 white-space: nowrap;
-                overflow: visible;
+                overflow: hidden;
                 text-overflow: clip;
                 text-align: center;
+                position: relative;
+            }
+
+            .mode-btn::before {
+                display: none;
             }
 
             /* Board */
