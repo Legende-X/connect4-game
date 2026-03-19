@@ -32,6 +32,11 @@
             box-sizing: border-box;
         }
 
+        html {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
         body {
             font-family: 'Rajdhani', sans-serif;
             background: linear-gradient(135deg, rgb(1, 42, 98) 0%, #0a2050 50%, #153a6e 100%);
@@ -41,6 +46,7 @@
             align-items: center;
             color: #fff;
             overflow-x: hidden;
+            max-width: 100%;
             position: relative;
         }
 
@@ -118,6 +124,9 @@
             justify-content: center;
             margin-bottom: 1.5rem;
             padding: 0.5rem;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .mode-btn {
@@ -133,6 +142,8 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
             transition: all 0.3s ease;
+            flex: 0 0 auto;
+            width: auto;
         }
 
         .mode-btn.active {
@@ -362,6 +373,16 @@
                 padding-left: 20px;
                 padding-right: 20px;
                 padding-top: 2.5rem;
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            body {
+                align-items: flex-start;
+                justify-content: center;
+                overflow-x: hidden;
+                width: 100%;
             }
 
             h1 {
