@@ -1,7 +1,9 @@
-const CACHE_NAME = 'legendex-connect4-v2';
+const CACHE_NAME = 'legendex-connect4-v3';
 const urlsToCache = [
   './index.html',
-  './manifest-connect4.json'
+  './manifest-connect4.json',
+  './icon-192-connect4.png',
+  './icon-512-connect4.png'
 ];
 
 // Install event - cache files
