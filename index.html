@@ -10,6 +10,10 @@
     <meta name="apple-mobile-web-app-title" content="Connect4">
     <link rel="manifest" href="manifest-connect4.json">
     <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png">
+    <link rel="shortcut icon" href="icon-192.png" type="image/png">
+    <link rel="icon" sizes="192x192" href="icon-192.png" type="image/png">
     <meta name="theme-color" content="#2b2b2b">
     <style>
         :root {
@@ -362,7 +366,13 @@
             h1 {
                 font-size: 2.5rem;
                 letter-spacing: 0.1em;
+                margin-bottom: 2rem;
+            }
+
+            .status {
+                font-size: 1rem;
                 margin-bottom: 1rem;
+                height: auto;
             }
 
             .logo {
